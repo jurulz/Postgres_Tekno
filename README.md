@@ -1,38 +1,43 @@
-PostgreSQL Installation and Validation Script for Teknoparrot
 
+# **PostgreSQL Installation and Validation Script for Teknoparrot**
 
 This PowerShell script automates the process of installing PostgreSQL 8.3, setting up necessary dependencies, and validating the installation for Teknoparrot by unspoiledpuma. It provides a guided installation experience with clear visual cues and status updates.
 
-Features
-Folder Selection: Prompts the user to select a base folder for PostgreSQL installation.
-Download and Extraction: Automatically downloads and extracts the PostgreSQL installer.
-Service Management: Ensures the Secondary Logon service is running, which is required for the installation.
-Prerequisites Installation: Installs the Microsoft VC++ 2005 runtime libraries.
-PostgreSQL Installation: Installs PostgreSQL and provides prompts for user interaction.
-Installation Verification: Validates the PostgreSQL service (pgsql-8.3) is running and provides detailed status information.
-Reboot Prompt: Prompts the user to reboot the system to complete the installation process.
-How to Use
-Download the Script: Clone the repository or download the script file Install_Postgress_Teknoparrotv1-0.ps1.
+## **Features**
 
-Run the Script: Execute the script in a PowerShell session with administrative privileges.
+- **Folder Selection**: Prompts the user to select a base folder for PostgreSQL installation.
+- **Download and Extraction**: Automatically downloads and extracts the PostgreSQL installer.
+- **Service Management**: Ensures the Secondary Logon service is running, which is required for the installation.
+- **Prerequisites Installation**: Installs the Microsoft VC++ 2005 runtime libraries.
+- **PostgreSQL Installation**: Installs PostgreSQL and provides prompts for user interaction.
+- **Installation Verification**: Validates the PostgreSQL service (`pgsql-8.3`) is running and provides detailed status information.
+- **Reboot Prompt**: Prompts the user to reboot the system to complete the installation process.
 
-powershell
-Copy code
-.\Install_Postgress_Teknoparrotv1-0.ps1
-Follow Prompts: The script will guide you through selecting the installation folder and other necessary steps.
+## **How to Use**
 
-Summary of Actions
+1. **Download the Script**: Clone the repository or download the script file `Install_Postgress_Teknoparrotv1-0.ps1`.
+2. **Run the Script**: Execute the script in a PowerShell session with administrative privileges.
+
+    ```powershell
+    .\Install_Postgress_Teknoparrotv1-0.ps1
+    ```
+
+3. **Follow Prompts**: The script will guide you through selecting the installation folder and other necessary steps.
+
+## **Summary of Actions**
+
 At the end of the installation process, the script provides a summary of the following actions:
 
-Installation Folder Selection: Confirms the folder where PostgreSQL will be installed.
-Download and Extraction: Status of the PostgreSQL installer download and extraction.
-Secondary Logon Service: Checks if the service is started or already running.
-VC++ 2005 Runtime Installation: Status of the Microsoft VC++ runtime installation.
-PostgreSQL Installation: Confirms whether PostgreSQL was installed successfully.
-Verification: Validates the PostgreSQL service is running, providing detailed service status information.
-Example Output
-plaintext
-Copy code
+1. **Installation Folder Selection**: Confirms the folder where PostgreSQL will be installed.
+2. **Download and Extraction**: Status of the PostgreSQL installer download and extraction.
+3. **Secondary Logon Service**: Checks if the service is started or already running.
+4. **VC++ 2005 Runtime Installation**: Status of the Microsoft VC++ runtime installation.
+5. **PostgreSQL Installation**: Confirms whether PostgreSQL was installed successfully.
+6. **Verification**: Validates the PostgreSQL service is running, providing detailed service status information.
+
+## **Example Output**
+
+```
 #######################################
 PostgreSQL Installation and Validation
 #######################################
@@ -60,11 +65,16 @@ Verify PostgreSQL Installation: Success
 Thank you for using the installation script!
 Please ensure that you reboot your computer if not done yet.
 #######################################
-Reboot
+```
+
+## **Reboot**
+
 The script prompts for a reboot at the end of the installation process. It is recommended to reboot your system to complete the setup.
 
-License
+## **License**
+
 This project is licensed under the MIT License.
 
-Contributing
+## **Contributing**
+
 Feel free to fork this project, submit issues, or contribute to improve the script.
