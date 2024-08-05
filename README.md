@@ -18,7 +18,9 @@ This PowerShell script automates the process of installing PostgreSQL 8.3, setti
 If You have getting this error:  " The file
 C:\Install_Postgress_Teknoparrotv1-0.ps1 is not digitally signed. You cannot run this script on the current system."
 
-**Open a powershell in admin and run this command**: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+**Open a powershell in admin and run this command**: 
+
+```Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass```
 
 Of course the Script is not digitaly signed ;)
 
@@ -31,7 +33,7 @@ Of course the Script is not digitaly signed ;)
 
 3. **Follow Prompts**: The script will guide you through selecting the installation folder and other necessary steps.
 
-   ## **Youtube Link**:  https://youtu.be/jrTkxemapRg
+## **Youtube Link**:  https://youtu.be/jrTkxemapRg
 
 The script prompts for a reboot at the end of the installation process. It is recommended to reboot your system to complete the setup.
 
@@ -44,8 +46,7 @@ At the end of the installation process, the script provides a summary of the fol
 3. **Secondary Logon Service**: Checks if the service is started or already running.
 4. **VC++ 2005 Runtime Installation**: Status of the Microsoft VC++ runtime installation.
 5. **PostgreSQL Installation**: Confirms whether PostgreSQL was installed successfully.
-6. **Verification**: Validates the PostgreSQL service is running, providing detailed service status information.
-
+6. **Verification**: Validates the PostgreSQL service is running.
 ## **Reboot**
 
 The script prompts for a reboot at the end of the installation process. It is recommended to reboot your system to complete the setup.
