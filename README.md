@@ -15,6 +15,13 @@ This PowerShell script automates the process of installing PostgreSQL 8.3, setti
 
 ## **How to Use**
 
+If You have getting this error:  " The file
+C:\Install_Postgress_Teknoparrotv1-0.ps1 is not digitally signed. You cannot run this script on the current system."
+
+**Open a powershell in admin and run this command**: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+Of course the Script is not digitaly signed ;)
+
 1. **Download the Script**: Clone the repository or download the script file `Install_Postgress_Teknoparrotv1-0.ps1`.
 2. **Run the Script**: Execute the script in a PowerShell session with administrative privileges.
 
