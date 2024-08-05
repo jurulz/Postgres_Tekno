@@ -1,7 +1,7 @@
 
 # **PostgreSQL Installation and Validation Script for Teknoparrot**
 
-This PowerShell script automates the process of installing PostgreSQL 8.3, setting up necessary dependencies, and validating the installation for Teknoparrot by unspoiledpuma. It provides a guided installation experience with clear visual cues and status updates.
+This PowerShell script automates the process of installing PostgreSQL 8.3, setting up necessary dependencies, and validating the installation for Teknoparrot. It provides a guided installation experience with clear visual cues and status updates.
 
 ## **Features**
 
@@ -24,6 +24,10 @@ This PowerShell script automates the process of installing PostgreSQL 8.3, setti
 
 3. **Follow Prompts**: The script will guide you through selecting the installation folder and other necessary steps.
 
+   ## **Youtube Link**:  https://youtu.be/jrTkxemapRg
+
+The script prompts for a reboot at the end of the installation process. It is recommended to reboot your system to complete the setup.
+
 ## **Summary of Actions**
 
 At the end of the installation process, the script provides a summary of the following actions:
@@ -34,38 +38,6 @@ At the end of the installation process, the script provides a summary of the fol
 4. **VC++ 2005 Runtime Installation**: Status of the Microsoft VC++ runtime installation.
 5. **PostgreSQL Installation**: Confirms whether PostgreSQL was installed successfully.
 6. **Verification**: Validates the PostgreSQL service is running, providing detailed service status information.
-
-## **Example Output**
-
-```
-#######################################
-PostgreSQL Installation and Validation
-#######################################
-Step 1: Select Installation Folder
-...
-Step 6: Verifying PostgreSQL Installation...
-PostgreSQL service 'pgsql-8.3' is running.
-Service Status Details:
-    SERVICE_NAME: pgsql-8.3
-    DISPLAY_NAME: PostgreSQL Database Server 8.3
-    STATE: 4 RUNNING
-    START_TYPE: 2 AUTO_START
-    SERVICE_TYPE: 0x10 WIN32_OWN_PROCESS
-#######################################
-            Summary of Actions
-#######################################
-Select Installation Folder: Completed
-Download PostgreSQL Installer: Completed
-Unzip PostgreSQL Installer: Completed
-Ensure Secondary Logon Service: Already Running
-Install VC++ 2005 Runtime: Completed
-Install PostgreSQL: Completed
-Verify PostgreSQL Installation: Success
-#######################################
-Thank you for using the installation script!
-Please ensure that you reboot your computer if not done yet.
-#######################################
-```
 
 ## **Reboot**
 
